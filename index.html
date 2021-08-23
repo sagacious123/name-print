@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,600;1,700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Name Print</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        width: 85%;
+        margin: auto;
+        background-color: rgb(247, 251, 255);
+        text-align: center;
+        padding: 2rem 1.5rem;
+        margin-top: 4rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+      .name { 
+        margin: auto;
+        transform-origin: center;
+        animation: width 2s infinite;
+      }
+      h2 {
+        font-size: 1.6rem;
+        color: rgb(16, 0, 158);
+        /* opacity: 0; */
+      }
+      @keyframes width {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Hey, welcome!</h3>
+      <p>My name is</p>
+      <div class="name">
+        <h2></h2>
+      </div>
+    </div>
+
+    <script>
+      const name = "Joseph Bajegbo";
+      const display = document.querySelector("h2");
+      display.innerHTML = name;
+    </script>
+
+  </body>
+</html>
